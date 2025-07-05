@@ -14,6 +14,8 @@ interface AuthModalProps {
 }
 
 const BASE_URL = `${import.meta.env.VITE_URL}/api/auth`;
+console.log(BASE_URL);
+
 
 const AuthModal = ({ isOpen, onClose, defaultTab = 'login', onAuthenticated }: AuthModalProps) => {
   const [tab, setTab] = useState<'login' | 'signup'>(defaultTab);
